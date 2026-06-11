@@ -391,17 +391,27 @@ main {
 }
 
 .site-footer__cta {
-  display: inline-block;
+  display: inline-flex;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background: linear-gradient(
+    205.32deg,
+    rgba(151, 89, 255, 0.5) 14.96%,
+    rgba(123, 45, 255, 0.5) 41.35%,
+    rgba(44, 26, 77, 0.5) 79.7%,
+    rgba(22, 13, 39, 0.5) 101.02%
+  );
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #f4f6fa;
+  text-decoration: none;
   transition: filter 300ms ease-out, transform 300ms ease-out;
-
-  img {
-    display: block;
-    height: 50px;
-    width: auto;
-  }
 
   &:hover,
   &:focus-visible {
+    color: #f4f6fa;
     filter: brightness(1.08);
     transform: translateY(-1px);
   }
